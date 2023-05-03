@@ -118,45 +118,52 @@ In the next section, we will step through the steps to start using the `IBM Wats
 
 ### Get Entitlement Key
 
-To deploy your own instance of IBM Watson NLP Library for Embed, you first need an Entitlement Key or license.
+To deploy your own instance of IBM Watson NLP Library for Embed, you first need an Entitlement Key or license. You can sign up for the trial license that allows you to use Watson NLP for 180 days for free.
 
-1. Click the Deploy tab,
+1. Click the [Deploy](https://dsce.ibm.com/wizard/try/results/embed-nlp-entities-container-pt#deploy) tab,
 
   ![DSCE - Deploy](images/dsce-07-deploy.png)
 
-To deploy Watson NLP Embed AI libraries you need to have an IBM account and an entitlement key to use as a license,
+1. Click the [Get trail license and access container](https://www.ibm.com/account/reg/us-en/signup?formid=urx-51726),
+1. Sign up for the trial to link the trial license of `IBM Watson NLP Library for Embed` to your `IBM Id`,
+1. If you have an IBM Id already, click `Log in` 
+1. On the [IBM account](https://www.ibm.com/account/us-en/) page,
+1. Click `Manage Products`, which will forward you to [https://myibm.ibm.com/dashboard/](https://myibm.ibm.com/dashboard/),
 
-1. If you don't have an IBM Cloud account, [Create an IBM Cloud account](https://cloud.ibm.com/registration?cm_sp=cpp_120k&target=%2Fpartner-center%2Fregistration%3FcppAttr%3DcHJvZ3JhbT1TVEFSVFVQX1dJVEhfSUJN),
-1. To get your entitlement key, log into your [MyIBM Dashboard](https://myibm.ibm.com/dashboard/)
-1. Click the `Get trial license and access container` button,
-1. Signup or login using your IBM Id,
-1. In the `Container Software & Entitlement Keys` tile, click `View Library`,
+  ![My IBM Dashboard - Entitlement Keys](images/myibm-09-dashboard.png)
+
+1. Under `Trials`, you should see your trial of `IBM Watson NLP Library for Embed`,
+1. Under `Cloud Paks & container software`, you should see a `Container Software & Entitlement Keys` tile,
+1. Click `View Library`,
 1. You can view existing or create new entitlement keys,
 
   ![My IBM Dashboard - Entitlement Keys](images/myibm-10-entitlement-key.png)
 
-### Signup for Trial of Watson Studio
+All good, we verified that the trial is active and you have an entitlement key. You now could already use the default image for Watson NLP using your entitlement key. The default image will use the pre-trained model and give you out-of-the-box results. But most likely, for a specific use case in a specific domain with specific data, you can increase the accuracy of the Watson NLP algorithms by training a custom model. Training of custom models can be done in environments like Watson Studio.
 
-1. You need to sign up for the `IBM Watson Natural Language Processing Library for Embed` Trial
+## Use Watson Studio in TechZone
 
-You can apply to qualify for $3000 credits on IBM Cloud. Go to [https://dsce.ibm.com/wizard/try/results/embed-nlp-entities-container-pt#deploy](https://dsce.ibm.com/wizard/try/results/embed-nlp-entities-container-pt#deploy).
+To train a custom model you can use Watson Studio. [IBM TechZone](techzone.ibm.com) makes free POC environments or sandboxes of IBM products like Watson Studio available to IBM partners.
 
-1. In your [MyIBM Dashboard](https://myibm.ibm.com/dashboard/), you can see your Trials
-
-  ![My IBM Dashboard - NLP Overview](images/myibm-09-dashboard.png)
-
-1. In the `IBM Watson Natural Language Processing Library for Embed` tile, click Manage,
-1. Go back to [MyIBM Dashboard](https://myibm.ibm.com/dashboard/) and scroll down to the `Cloud Paks & container software` section,
-
-
-## Access TechZone
-
-To customize a model you can use an instance of Watson Studio on TechZone. [IBM TechZone](techzone.ibm.com) makes free POC environments or sandboxes of IBM products available to IBM partners.
-
-1. Go to [https://techzone.ibm.com/dashboard](https://techzone.ibm.com/dashboard),
 1. To reserve a Watson Studio environment, follow the instructions in this [TechZone Tutorial](https://github.com/ibm-build-lab/Watson-NLP/blob/main/hands-on-lab/use-model/ML-TZ.md),
 
 ## Use a Custom Model
+
+1. Reserve a [Watson Studio environment in TechZone](https://techzone.ibm.com/collection/watson-nlp-library-hands-on-lab/journey-use-model).
+
+  ![TechZone - Use Model](images/tz-watson-nlp-usemodel.png)
+
+1. Select Reserve now,
+
+  ![TechZone - Use Model](images/tz-watson-nlp-usemodel-reserve.png)
+
+1. When filling in the form you can set:
+
+    * Purpose: Practice/Self-Education
+    * Purpose description: Hands-on lab
+    * Preferred geography: AMERICAS - us-south region - any datacenter
+
+  ![TechZone - Use Model](images/tz-watson-nlp-usemodel-form.png)
 
 1. Check your [Reservations in TechZone](https://techzone.ibm.com/my/reservations), to make sure the Watson Studio sandbox is Ready,
 
@@ -180,43 +187,57 @@ To customize a model you can use an instance of Watson Studio on TechZone. [IBM 
 
 1. Next, create an asset token,
 1. Click on the Manage tab.
-1. Switch to the Access control menu item on the left, then select Access tokens,
-1. If no token exists yet, click New access token,
+1. Switch to the `Access control` menu item on the left, then select `Access tokens`,
+1. If no token exists yet, click `New access token`,
 1. Enter a Name for the access token, and select Editor in the Access role. Then, click Create.
-1. Click on the Assets tab, and find the notebook Emotion Classification - Custom Models. Click the three dots on the right to open a drop-down menu, select Edit,
-1. Once your notebook loads, in the top right of the horizontal tool bar, click the 3 dots dropdown, and select Insert project token,
+1. Click on the Assets tab, and find the notebook `Emotion Classification - Custom Models`.
+1. Click the three dots on the right to open a drop-down menu, select Edit,
+
+  ![Watson Studio - Assets - Edit](images/24-ws-assets-edit.png)
+
+1. Your notebook will load,
+
+  ![Watson Studio - Loading](images/25-ws-loading.png)
+
+1. Once your notebook has loaded, in the top right of the horizontal tool bar, click the 3 dots dropdown, and select Insert project token,
 
   ![Watson Studio - Jupyter Notebook - Insert project token](images/25-ws-insert-token.png)
 
-1. You are now ready to customize your model,
+1. You should see the token been inserted at the top of your notebook,
+
+  ![Watson Studio - Token Inserted](images/25-ws-token-inserted.png)
+
+You're all set! You are now ready to customize your model and edit the notebook. After you edited your notebook, you only need to rebuild your container image with the custom model for Watson NLP and redeploy it.
 
 ## Build Custom Model Image
 
-Instead of using the pre-trained model, you can also use the customized model and build the custom model image for deployment. Follow the instructions below.
+Instead of using the pre-trained model, you can also use the customized model and build the container image for deployment with the custom model. Follow the instructions at [Build the custom model container](https://dsce.ibm.com/wizard/deploy/results/nlp-build-ct#try).
 
-1. Go back to the Deploy tab at [https://dsce.ibm.com/wizard/try/results/embed-nlp-entities-container-pt#deploy](https://dsce.ibm.com/wizard/try/results/embed-nlp-entities-container-pt#deploy),
-1. In Step 2, click Package and deploy your application,
+1. There is a boilerplate code for your custom model container,
 
-  ![DSCE - Deploy](images/dsce-11-deploy.png)
+```dockerfile
+# Watson Studio
+project.save_data('ensemble_model', data=ensemble_model.as_file_like_object(), overwrite=True)
 
-1. In the Infuse your product with AI from IBM page, select Watson NLP,
-1. Select Build a model image,
+# Dockerfile
+ARG WATSON_RUNTIME_BASE="wcp-ai-foundation-team-docker-virtual.artifactory.swg-devops.com/watson-nlp-runtime:1.0.0"
+FROM ${WATSON_RUNTIME_BASE} as base
+ENV LOCAL_MODELS_DIR=/app/models
+COPY models /app/models
 
-  ![DSCE - Deploy - Build a model image](images/dsce-12-build-a-model-image.png)
+docker build . -t watson-nlp-custom-container:v1 
+```
 
-1. Select Custom model,
-1. Click Next,
-
-  ![DSCE - Deploy - Build a model image](images/dsce-13-custom-next.png)
-
-1. Review the Try steps,
-
-  ![DSCE - Deploy - Build a model image](images/dsce-14-try.png)
-
-1. To build the custom model container, review the [tutorial](https://developer.ibm.com/tutorials/serve-custom-models-using-standalone-containers/),
+That concludes this demo.
 
 ## Work with IBM Build Lab
 
-## Learn More
+If you have any questions or want to work on your solution with us 1-on-1, you can contact us via the [DSCE site](https://dsce.ibm.com/).
 
-To learn more about embeddable AI using Watson NLP see the Assets for Watson NLP by Build Lab at [https://github.com/ibm-build-lab/Watson-NLP](https://github.com/ibm-build-lab/Watson-NLP).
+  ![DSCE - Contact Us](images/27-dsce-contactus.png)
+
+1. In the top-right, click `Contact Us`,
+
+  ![DSCE - Contact Us](images/28-dsce-contactus2.png)
+
+1. To learn more about embeddable AI using Watson NLP see the Assets for Watson NLP by Build Lab at [https://github.com/ibm-build-lab/Watson-NLP](https://github.com/ibm-build-lab/Watson-NLP).
