@@ -4,16 +4,9 @@
 
 * Open landing page [DSCE](https://dsce.ibm.com/),
 * Open [https://github.com/IBM/dsce-sample-apps/tree/main/entity-extraction](https://github.com/IBM/dsce-sample-apps/tree/main/entity-extraction),
-* Open [Watson NLP for Embed Script](remkohdev.github.io/watson-nlp-for-embed),
 * Open [http://localhost:8050/](http://localhost:8050/) for local demo,
-* Open DSCE site,
-* Open `Contact Us` in DSCE,
 * Open [IBM Watson Natural Language Processing Library for Embed Trial](https://www.ibm.com/account/reg/us-en/signup?formid=urx-51726),
-* Open [Watson NLP Hands-on Tutorial](https://github.com/ibm-build-lab/Watson-NLP/blob/main/hands-on-lab/use-model/ML-TZ.md),
-* Open TechZone asset [Watson NLP Library Hands-on Lab](https://techzone.ibm.com/collection/watson-nlp-library-hands-on-lab/journey-use-model),
-* Create Watson Studio sandbox in TechZone,
 * Open to edit Jupyter Notebook `Emotion Classification - Custom Model`,
-* Open [MyIBM Dashboard](https://myibm.ibm.com/dashboard/),
 
 ## Introduction
 
@@ -53,9 +46,12 @@ Other [IBM products use embedded AI](https://dsce.ibm.com/wizard/try?page=build-
 
 ### Agenda
 
+1. Introduction
 1. Start with DSCE wizard,
 1. Demo: Use a Pre-Trained Model,
-1. 
+1. Get an Entitlement Key and Sign up for Trial
+1. Use Watson Studio for Custom Model in TechZone
+1. Conclusion
 
 ## Start with DSCE
 
@@ -116,7 +112,7 @@ Now you have seen how you can deploy the Watson NLP Runtime and embed it in your
 
 In the next section, we will step through the steps to start using the `IBM Watson NLP Library for Embed` in your own solutions.
 
-### Get Entitlement Key
+### Get Entitlement Key and Sign up for Trial
 
 To deploy your own instance of IBM Watson NLP Library for Embed, you first need an Entitlement Key or license. You can sign up for the trial license that allows you to use Watson NLP for 180 days for free.
 
