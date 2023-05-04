@@ -1,5 +1,7 @@
 # Embeddable AI
 
+You can access this page via [https://ibm.biz/watson-nlp-for-embed](https://ibm.biz/watson-nlp-for-embed).
+
 ## Pre-requisites
 
 * Open landing page [DSCE](https://dsce.ibm.com/),
