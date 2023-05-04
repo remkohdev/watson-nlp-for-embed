@@ -232,7 +232,7 @@ That concludes this demo.
 
 ## Work with IBM Build Lab
 
-If you have any questions or want to work on your solution with us 1-on-1, you can contact us via the [DSCE site](https://dsce.ibm.com/).
+If you have any questions or want to work on your solution with us 1-on-1, talk with your seller. Alternatively you can contact us via the [DSCE site](https://dsce.ibm.com/).
 
   ![DSCE - Contact Us](images/27-dsce-contactus.png)
 
