@@ -7,6 +7,7 @@
 * Open [http://localhost:8050/](http://localhost:8050/) for local demo,
 * Open [IBM Watson Natural Language Processing Library for Embed Trial](https://www.ibm.com/account/reg/us-en/signup?formid=urx-51726),
 * Open to edit Jupyter Notebook `Emotion Classification - Custom Model`,
+* Check your reservation of Watson Studio sandbox at [https://techzone.ibm.com/collection/watson-nlp-library-hands-on-lab/journey-use-model](https://techzone.ibm.com/collection/watson-nlp-library-hands-on-lab/journey-use-model).
 
 ## Introduction
 
